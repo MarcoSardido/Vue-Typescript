@@ -26,12 +26,6 @@ export const actions: ActionTree<State, State> & Actions = {
         await delay(1000)
 
         commit(MutationType.SetLoading, false)
-        commit(MutationType.SetItems, [
-            {
-                id: 1,
-                title: "Create awesome Vue3 with Vuex Project",
-                completed: false
-            }
-        ])
+        commit(MutationType.SetItems, [])
     }
 }

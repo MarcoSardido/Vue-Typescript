@@ -3,10 +3,10 @@ import {
   Store as VuexStore,
   CommitOptions,
   DispatchOptions
-} from "vuex/types/index.js";
+} from "vuex";
 import { State, state } from "./states";
 import { Mutations, mutations } from "./mutations";
-import { Actions, actions, ActionTypes } from "./actions";
+import { Actions, actions } from "./actions";
 import { Getters, getters } from "./getters";
 
 export const store = createStore<State>({
